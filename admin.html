@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="admin-style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+ <!-- Navbar -->
+<nav>
+
+                <article class="main">
+
+<div class = "logo">
+    <br>
+                    <a href="index.html"><img width="16%" src="assets/img/book.png" alt="booktique logo"></a>
+                </div>
+                    <ul>
+
+                        <li><a href="index.html">LogOut</a></li>   
+                    </ul>
+    </article>
+            </nav>
+
+<div style="text-align:center; color: #998D7C">
+  <h1><i class="fa fa-cog	"></i>Admin Panel</h1>
+
+</div>
+
+<br>
+
+<!-- Admin panels -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#998D7C;">
+    View inventory
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#998D7C;">
+    Add a book
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#998D7C;">
+    Remove a book
+  </div>
+</div>
+
+
+<!-- Extended panels-->
+<div id="b1" class="containerTab" style="display:none;background:#998D7C">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>View information on our books below</h3>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#998D7C">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>Enter the details about the book you would like to add below:</h3>
+
+ <!-- Add book form -->
+ <form action="">
+ <label for="btitle">Book title</label>
+ <input type="text" id="btitle" name="booktitle" placeholder="Title of the book">
+
+ <label for="bISBN">Book ISBN</label>
+ <input type="text" id="bISBN" name="bookISBN" placeholder="ISBN number of the book">
+
+ <label for="bauthor">Book Author</label>
+ <input type="text" id="bauthor" name="bookauthor" placeholder="Authour of the book">
+
+ <label for="bdetails">Book Details</label>
+ <input type="text" id="bdetails" name="bookdetails" placeholder="Link to further details about the book">
+
+ <label for="bstock">Book Stock</label>
+ <input type="text" id="bstock" name="bookstock" placeholder="Amount of books avaliable">
+
+ <input type="submit" value="Submit">
+</form>
+
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#998D7C">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h3>Enter ISBN of the book you would like to remove below</h3>
+  <!-- Remove book form -->
+  <form action="">
+
+  <label for="bISBN">Book ISBN</label>
+  <input type="text" id="bISBN" name="bookISBN" placeholder="ISBN number of the book">
+
+  <input type="submit" value="Remove book">
+ </form>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+
+<!-- Footer -->
+
+</html>

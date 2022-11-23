@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Fix</title>
+    <link rel="stylesheet" href="login.css" />
+      
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" 
+            rel="stylesheet">
+      
+    <script defer src="script.js"></script>
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+      <header>
+            <nav>
+
+                <article class="main">
+                     
+
+                    <ul>
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                       
+                    </ul>
+                </article>
+            
+                
+            </nav>
+        </header>
+      
+    <section class="container-1">
+      <div class="login">
+
+        <div class="login__details">
+          <div class="login__details-page">
+            <div class="login__details-image--box">
+              <img class="login__details-image" src="assets/img/book2.png" alt="book2 image" />
+            </div>
+              
+            <p class="login__details-text">Find your book at any time</p>
+            <div class="dots">
+                <svg class="dot dot--fill" width="19" height="19"></svg>
+        
+            </div>
+          </div>
+        </div>
+        <div class="login__info">
+         
+          <div class="login__info-page">
+            <!-- <div class="login__info-box"> -->
+              
+            <p class="login__info-title">Login</p>
+              
+            <form action="php/login.php" method="POST">
+                
+            <input class="login-info-page--input sm-b" type='text' placeholder="Username"  id="username" name="username" required>
+            <span id="username-error" style="color:red"></span>
+        
+
+            <div class="login__info-page--special">
+            <input class="login-info-page--input " type='password' placeholder="Password" id="password" name="password" required>
+            <span id="password-error" style="color:red"></span>
+                
+            
+            </div>
+              </form>
+          </div>
+            </div>
+        </div>
+    </section>
+  </body>
+ 
+</html>
