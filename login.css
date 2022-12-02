@@ -279,6 +279,23 @@ ul li a {
 .sm-b {
   margin-bottom: 4.4rem; }
 
+.btn-big{
+    background: #998D7C;
+    color: #fff;
+    font-size: 12px;
+    height: 30px;
+    margin-left: 260px;
+    margin-top: 20px;
+    border: none;
+      width: 100%;
+    max-width: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 20px;
+   
+}
+
 form {
   display: flex;
   flex-direction: column; }
